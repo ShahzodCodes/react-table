@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+/* input{
+    width: 100px;
+    border: 1px solid blue;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input:disabled{
+    border: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+table{
+    border-collapse: collapse;
+} */
+body{
+    background-color: rgb(172, 172, 172);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body, .info-adders{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-
-.App-link {
-  color: #61dafb;
+.info-adders input{
+    width: 300px;
+    height: 50px;
+    font-size: 30px;
+    background-color: rgb(10, 40, 87);
+    color: white;
+    padding: 10px 20px;
+    box-sizing: border-box;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.info-adders button{
+    width: 200px;
+    height: 40px;
+    background-color: rgb(168, 252, 0);
+    color: rgb(10, 40, 87);
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+table{
+    width: 1000px;
+    height: 400px;
+    border: 2px solid red;
+    text-align: center;
+    background-color: #fff;
+}
+th{
+    font-size: 35px;
+}
+td{
+    font-size: 30px;
+    color: rgb(40, 3, 247);
+}
+td button{
+    width: 100px;
+    height: 35px;
+    font-size: 20px;
+}
+td input{
+    width: 130px;
+    height: 32px;
+    font-size: 25px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+td input:focus{
+    outline: none;
 }
