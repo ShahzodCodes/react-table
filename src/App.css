@@ -1,13 +1,4 @@
-/* input{
-    width: 100px;
-    border: 1px solid blue;
-}
-input:disabled{
-    border: none;
-}
-table{
-    border-collapse: collapse;
-} */
+
 body{
     background-color: rgb(172, 172, 172);
 }
@@ -36,10 +27,11 @@ body, .info-adders{
 }
 table{
     width: 1000px;
-    height: 400px;
+    height: fit-content;
     border: 2px solid red;
     text-align: center;
     background-color: #fff;
+    border-collapse: collapse;
 }
 th{
     font-size: 35px;
@@ -55,13 +47,24 @@ td button{
 }
 td input{
     width: 130px;
-    height: 32px;
+    height: 27px;
     font-size: 25px;
-    background-color: black;
-    color: white;
+    background-color: rgb(126, 126, 126);
+    color: black;
     text-align: center;
     border-radius: 10px;
 }
 td input:focus{
     outline: none;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.search input{
+    width: 200px;
+    height: 50px;
 }

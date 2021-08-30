@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Student from './App';
+import Main from './lesson1/main';
+import Student from './table';
 
 
 ReactDOM.render(

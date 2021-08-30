@@ -1,0 +1,7 @@
+.calc{
+    display: flex;
+    align-items: center;
+}
+button{
+    padding: 20px;
+}

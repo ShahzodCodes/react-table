@@ -85,7 +85,7 @@ class Student extends React.Component {
                <th>ID</th>
                <th>Name</th>
                <th>Status</th>
-               <th>Delete</th>
+               <th>Remove</th>
                <th>Edit</th>
                {/* <th>Save</th> */}
              </tr>
@@ -120,7 +120,7 @@ class Student extends React.Component {
                  ) : ( <div>{status}</div> )
                   } 
                 </td>
-                <td> <button onClick={ ()=> onDelete(id)}>cut {id} </button> </td>
+                <td> <button onClick={ ()=> onDelete(id)}>delete {id} </button> </td>
                 <td> 
                   <button onClick={()=> this.state.selected === id 
                     ? onSave(id) 
@@ -134,16 +134,17 @@ class Student extends React.Component {
                     {this.state.selected === id ? 'save' : 'edit'}
                   </button> 
                 </td>
-                {/* <td> <button>Save {id}</button> </td> */}
               </tr>
-                
-                
+
             )
           })
         }
-
     </tbody>
 </table>
+
+        <div className='search'> 
+           <input type='text' placeholder='search...'  />
+        </div>
       </div>
     );
   }
