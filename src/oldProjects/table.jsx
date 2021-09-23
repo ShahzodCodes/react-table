@@ -23,7 +23,7 @@ class Table extends React.Component {
       })
 
       // this.setState({ title: e.target.value })
-      // // console.log(e.target.value);
+      // console.log(e.target.value);
       // const newData = newList.filter(val => 
       //   val.name.includes(this.state.title)
       // );
